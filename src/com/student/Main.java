@@ -16,6 +16,16 @@ public class Main {
         animalList.add(new Mammals("Raccoon", 1758));
         animalList.add(new Mammals("BigFoot", 2021));
 
-        animalList.forEach(a -> System.out.println(a.getYearNamed()));
+        animalList.add(new Birds("Pigeon", 1837));
+        animalList.add(new Birds("Peacock", 1821));
+        animalList.add(new Birds("Toucan", 1758));
+        animalList.add(new Birds("Parrot", 1824));
+        animalList.add(new Birds("Swan", 1758));
+
+        animalList.add(new Fish("Salmon", 1758));
+        animalList.add(new Fish("Catfish", 1817));
+        animalList.add(new Fish("Perch", 1758));
+
+        animalList.forEach(a -> System.out.println(a.getClass()));
     }
 }
